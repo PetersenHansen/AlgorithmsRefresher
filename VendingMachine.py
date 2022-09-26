@@ -10,7 +10,7 @@
 # =======================================================
 
 
-# ______________ VARIABLES 'N SHIT ______________________
+# ______________ VARIABLES 'N STUFF ______________________
 
 #idk man, i just work here
 query = ""
@@ -113,7 +113,7 @@ while True:
         inventory()
     elif(query.startswith("add item")):
         addItem(query.split(' ')[2], query.split(' ')[3], query.split(' ')[4])
-    elif(query.startswith("buy item")):  #TODO needs full input validation, shouldn't just 'start with'
+    elif(query.startswith("buy item")):  #TODO: probably needs full input validation, shouldn't just 'start with'
         buyItem(query.split(' ')[2], query.split(' ')[3], query.split(' ')[4], query.split(' ')[5], query.split(' ')[6], query.split(' ')[7])
     elif(query == 'exit'):
         break
